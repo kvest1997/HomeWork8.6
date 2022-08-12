@@ -1,0 +1,14 @@
+D:\Учеба\Skillbox\HomeWork 8.6\Exercise_4\obj\Debug\netcoreapp3.1\Exercise_4.csproj.AssemblyReference.cache
+D:\Учеба\Skillbox\HomeWork 8.6\Exercise_4\obj\Debug\netcoreapp3.1\Exercise_4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Учеба\Skillbox\HomeWork 8.6\Exercise_4\obj\Debug\netcoreapp3.1\Exercise_4.AssemblyInfoInputs.cache
+D:\Учеба\Skillbox\HomeWork 8.6\Exercise_4\obj\Debug\netcoreapp3.1\Exercise_4.AssemblyInfo.cs
+D:\Учеба\Skillbox\HomeWork 8.6\Exercise_4\obj\Debug\netcoreapp3.1\Exercise_4.csproj.CoreCompileInputs.cache
+D:\Учеба\Skillbox\HomeWork 8.6\Exercise_4\bin\Debug\netcoreapp3.1\Exercise_4.exe
+D:\Учеба\Skillbox\HomeWork 8.6\Exercise_4\bin\Debug\netcoreapp3.1\Exercise_4.deps.json
+D:\Учеба\Skillbox\HomeWork 8.6\Exercise_4\bin\Debug\netcoreapp3.1\Exercise_4.runtimeconfig.json
+D:\Учеба\Skillbox\HomeWork 8.6\Exercise_4\bin\Debug\netcoreapp3.1\Exercise_4.runtimeconfig.dev.json
+D:\Учеба\Skillbox\HomeWork 8.6\Exercise_4\bin\Debug\netcoreapp3.1\Exercise_4.dll
+D:\Учеба\Skillbox\HomeWork 8.6\Exercise_4\bin\Debug\netcoreapp3.1\Exercise_4.pdb
+D:\Учеба\Skillbox\HomeWork 8.6\Exercise_4\obj\Debug\netcoreapp3.1\Exercise_4.dll
+D:\Учеба\Skillbox\HomeWork 8.6\Exercise_4\obj\Debug\netcoreapp3.1\Exercise_4.pdb
+D:\Учеба\Skillbox\HomeWork 8.6\Exercise_4\obj\Debug\netcoreapp3.1\Exercise_4.genruntimeconfig.cache
