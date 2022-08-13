@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Xml.Linq;
 
 namespace Exercise_4
@@ -8,6 +9,11 @@ namespace Exercise_4
     {
         private List<Person> _listPerson;
 
+        public XMLCreator()
+        {
+
+        }
+
         public XMLCreator(List<Person> listPerson)
         {
             this._listPerson = listPerson;
@@ -15,6 +21,7 @@ namespace Exercise_4
 
         public void SerializationPersonList(string path)
         {
+            XElement myRoot = new XElement("Root");
             XElement myPerson = new XElement("Person");
 
             XAttribute fioAttribute;
@@ -51,14 +58,37 @@ namespace Exercise_4
 
                 myPerson.Add(fioAttribute);
                 myPerson.Add(myAddress, myPhone);
+                myRoot.Add(myPerson);
+
+
+            }                
 
                 using (StreamWriter stream = new StreamWriter(path, true))
                 {
-                    myPerson.Save(stream);
+                    myRoot.Save(stream);
                 }
+        }
+
+        public List<Person> DeserializationPersonList(string path)
+        {
+            List<Person> people = new List<Person>();
+            string xml = File.ReadAllText(path);
+
+            var colName = XDocument.Parse(xml).Descendants("Root").Descendants("Person").ToList();
+            var colAddress = XDocument.Parse(xml).Descendants("Root").Descendants("Person").Descendants("Address").ToList();
+            var colPhone = XDocument.Parse(xml).Descendants("Root").Descendants("Person").Descendants("Phone").ToList();
+
+            for (int i = 0; i < colName.Count; i++)
+            {
+                people.Add(new Person(  colName[i].Attribute("name").Value,
+                                        colAddress[i].Element("Street").Value,
+                                        int.Parse(colAddress[i].Element("HouseNumber").Value),
+                                        int.Parse(colAddress[i].Element("FlatNumber").Value),
+                                        long.Parse(colPhone[i].Element("MobilePhone").Value),
+                                        int.Parse(colPhone[i].Element("FlatPhone").Value)));
             }
 
-
+            return people;
         }
     }
 }

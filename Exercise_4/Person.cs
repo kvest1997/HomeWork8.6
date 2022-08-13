@@ -10,7 +10,7 @@ namespace Exercise_4
         private string _streetAddress;
         private int _houseNumber;
         private int _flatNumber;
-        private int _mobilePhone;
+        private long _mobilePhone;
         private int _flatPhone;
 
         public Person()
@@ -18,14 +18,14 @@ namespace Exercise_4
 
         }
 
-        public Person(string fio, string streetAddress, int houseNumber, int flatNumber, int mobilePhone, int flatPhone)
+        public Person(string fio, string streetAddress, int houseNumber, int flatNumber, long mobilePhone, int flatPhone)
         {
-            this._fio = fio;
-            this._streetAddress = streetAddress;
-            this._houseNumber = houseNumber;
-            this._flatNumber = flatNumber;
-            this._mobilePhone = mobilePhone;
-            this._flatPhone = flatPhone;
+            this.FIO = fio;
+            this.StreetAddress = streetAddress;
+            this.HouseNumber = houseNumber;
+            this.FlatNumber = flatNumber;
+            this.MobilePhone = mobilePhone;
+            this.FlatPhone = flatPhone;
         }
 
         public string FIO
@@ -52,7 +52,7 @@ namespace Exercise_4
             set => _flatNumber = value;
         }
 
-        public int MobilePhone
+        public long MobilePhone
         {
             get => _mobilePhone;
             set => _mobilePhone = value;

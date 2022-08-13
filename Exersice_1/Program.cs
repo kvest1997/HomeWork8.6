@@ -16,6 +16,7 @@ namespace Exercise_1
             Console.WriteLine("\n-------------------");
 
             listTest = DeleteToElementList(listTest);
+            Console.WriteLine("\n-------------------");
 
             ListPrint(listTest);
 
@@ -45,15 +46,20 @@ namespace Exercise_1
 
         private static List<int> DeleteToElementList(List<int> list)
         {
-            for (int i = 0; i < list.Count; i++)
+            List<int> tempList = new List<int>();
+
+            Console.WriteLine("Удаленные числа");
+            foreach (var item in list)
             {
-                if (list[i] > 25 && list[i] < 50)
+                if (!(item > 25 && item < 50))
                 {
-                    list.RemoveAt(i);
+                    tempList.Add(item);
                 }
+                else
+                    Console.Write($"{item} ");
             }
 
-            return list;
+            return tempList;
         }
     }
 }

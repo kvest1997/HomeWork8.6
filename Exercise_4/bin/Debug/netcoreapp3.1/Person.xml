@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Person name="jjj">
-  <Address>
-    <Street>hhh</Street>
-    <HouseNumber>7777</HouseNumber>
-    <FlatNumber>888</FlatNumber>
-  </Address>
-  <Phone>
-    <MobilePhone>555</MobilePhone>
-    <FlatPhone>333</FlatPhone>
-  </Phone>
-</Person><?xml version="1.0" encoding="utf-8"?>
-<Person name="lll">
-  <Address>
-    <Street>hhh</Street>
-    <HouseNumber>666</HouseNumber>
-    <FlatNumber>333</FlatNumber>
-  </Address>
-  <Phone>
-    <MobilePhone>222</MobilePhone>
-    <FlatPhone>332</FlatPhone>
-  </Phone>
-</Person><?xml version="1.0" encoding="utf-8"?>
-<Person name="aaa">
-  <Address>
-    <Street>vv4v</Street>
-    <HouseNumber>4545</HouseNumber>
-    <FlatNumber>454</FlatNumber>
-  </Address>
-  <Phone>
-    <MobilePhone>344</MobilePhone>
-    <FlatPhone>232</FlatPhone>
-  </Phone>
-</Person>
+<Root>
+  <Person name="erte">
+    <Address>
+      <Street>ert</Street>
+      <HouseNumber>345</HouseNumber>
+      <FlatNumber>346</FlatNumber>
+    </Address>
+    <Phone>
+      <MobilePhone>0</MobilePhone>
+      <FlatPhone>546</FlatPhone>
+    </Phone>
+  </Person>
+  <Person name="rth">
+    <Address>
+      <Street>rth</Street>
+      <HouseNumber>345</HouseNumber>
+      <FlatNumber>234</FlatNumber>
+    </Address>
+    <Phone>
+      <MobilePhone>0</MobilePhone>
+      <FlatPhone>546</FlatPhone>
+    </Phone>
+  </Person>
+</Root>

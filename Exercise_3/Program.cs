@@ -13,9 +13,8 @@ namespace Exercise_3
                 int temp;
                     temp = int.Parse(Console.ReadLine());                
                     
-                    if (!kitValues.Contains(temp))
+                if (kitValues.Add(temp))
                 {
-                    kitValues.Add(temp);
                     Console.WriteLine($"Число {temp} успешно сохранено");
                 }
                 else
